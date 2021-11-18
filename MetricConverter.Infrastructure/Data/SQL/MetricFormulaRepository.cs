@@ -124,7 +124,7 @@ namespace MetricConverter.Infrastructure.Data.SQL
             catch (Exception ex)
             {
                 // Log error message ex
-                throw new ArgumentException("An error occured while updating product information - ", nameof(MetricFormulaEntity));
+                throw new ArgumentException("An error occured while updating metric formula information - ", nameof(MetricFormulaEntity));
             }
         }
     }

@@ -26,7 +26,66 @@ namespace MetricConverter.API.Controllers.V1
             this.metricFormulaService = metricFormulaService;
         }
 
+        /// <summary>
+        /// Get metric formula information
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("{Id}")]
+        [ProducesResponseType(typeof(MetricFormula), 200)]
+        [ProducesResponseType(typeof(ValidationResult), 400)]
+        [ProducesResponseType(typeof(ValidationResult), 500)]
+        public async Task<IActionResult> GetMetricFormula(Guid Id)
+        {
+            try
+            {
+                var response = await metricFormulaService.GetByIdAsync(Id);
+                return Ok(response);
+            }
+            catch (ApplicationException ax)
+            {
+                ValidationResult validationResult = new ValidationResult();
+                validationResult.ValidationMessages.Add(ax.Message);
+                return StatusCode(500, validationResult);
+            }
+            catch (Exception ex)
+            {
+                ValidationResult validationResult = new ValidationResult();
+                validationResult.ValidationMessages.Add(ex.Message);
+                return StatusCode(400, validationResult);
+            }
+        }
 
+        /// <summary>
+        /// Get all metric formula by typeid
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("type/{typeId}")]
+        [ProducesResponseType(typeof(List<MetricFormula>), 200)]
+        [ProducesResponseType(typeof(ValidationResult), 400)]
+        [ProducesResponseType(typeof(ValidationResult), 500)]
+        public async Task<IActionResult> MetricFormulaByTypeId(Guid typeId)
+        {
+            try
+            {
+                var response = await metricFormulaService.GetAllAsync(typeId);
+                return Ok(response);
+            }
+            catch (ApplicationException ax)
+            {
+                ValidationResult validationResult = new ValidationResult();
+                validationResult.ValidationMessages.Add(ax.Message);
+                return StatusCode(500, validationResult);
+            }
+            catch (Exception ex)
+            {
+                ValidationResult validationResult = new ValidationResult();
+                validationResult.ValidationMessages.Add(ex.Message);
+                return StatusCode(400, validationResult);
+            }
+        }
 
         /// <summary>
         /// Update metric formula information
@@ -119,65 +178,6 @@ namespace MetricConverter.API.Controllers.V1
             }
         }
 
-        /// <summary>
-        /// Get metric formula information
-        /// </summary>
-        /// <param name="Id"></param>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("{Id}")]
-        [ProducesResponseType(typeof(MetricFormula), 200)]
-        [ProducesResponseType(typeof(ValidationResult), 400)]
-        [ProducesResponseType(typeof(ValidationResult), 500)]
-        public async Task<IActionResult> GetMetricFormula(Guid Id)
-        {
-            try
-            {
-                var response = await metricFormulaService.GetByIdAsync(Id);
-                return Ok(response);
-            }
-            catch (ApplicationException ax)
-            {
-                ValidationResult validationResult = new ValidationResult();
-                validationResult.ValidationMessages.Add(ax.Message);
-                return StatusCode(500, validationResult);
-            }
-            catch (Exception ex)
-            {
-                ValidationResult validationResult = new ValidationResult();
-                validationResult.ValidationMessages.Add(ex.Message);
-                return StatusCode(400, validationResult);
-            }
-        }
 
-        /// <summary>
-        /// Get all metric formula by typeid
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("{Id}/type")]
-        [ProducesResponseType(typeof(List<MetricFormula>), 200)]
-        [ProducesResponseType(typeof(ValidationResult), 400)]
-        [ProducesResponseType(typeof(ValidationResult), 500)]
-        public async Task<IActionResult> MetricFormulaByTypeId(Guid Id)
-        {
-            try
-            {
-                var response = await metricFormulaService.GetAllAsync(Id);
-                return Ok(response);
-            }
-            catch (ApplicationException ax)
-            {
-                ValidationResult validationResult = new ValidationResult();
-                validationResult.ValidationMessages.Add(ax.Message);
-                return StatusCode(500, validationResult);
-            }
-            catch (Exception ex)
-            {
-                ValidationResult validationResult = new ValidationResult();
-                validationResult.ValidationMessages.Add(ex.Message);
-                return StatusCode(400, validationResult);
-            }
-        }
     }
 }

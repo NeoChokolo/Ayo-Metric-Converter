@@ -36,6 +36,19 @@
             
             </summary>
         </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.GetMetricFormula(System.Guid)">
+            <summary>
+            Get metric formula information
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.MetricFormulaByTypeId(System.Guid)">
+            <summary>
+            Get all metric formula by typeid
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.UpdateMetricFormula(MetricConverter.Model.MetricFormula)">
             <summary>
             Update metric formula information
@@ -55,19 +68,6 @@
             <param name="Id"></param>
             <returns></returns>
         </member>
-        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.GetMetricFormula(System.Guid)">
-            <summary>
-            Get metric formula information
-            </summary>
-            <param name="Id"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.MetricFormulaByTypeId(System.Guid)">
-            <summary>
-            Get all metric formula by typeid
-            </summary>
-            <returns></returns>
-        </member>
         <member name="T:MetricConverter.API.Controllers.V1.MetricTypeController">
             <summary>
             
@@ -84,6 +84,32 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricTypeController.GetMetricType(System.Guid)">
+            <summary>
+            Get metric type information
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricTypeController.AddMetricType(MetricConverter.Model.MetricType)">
+            <summary>
+            Add new metric type information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricTypeController.DeleteMetricType(System.Guid)">
+            <summary>
+            Delete metric type information
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricTypeController.UpdateMetricType(MetricConverter.Model.MetricType)">
+            <summary>
+            Update metric type information
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:MetricConverter.API.Controllers.V1.MetricUnitController">
             <summary>
             
@@ -97,6 +123,32 @@
         <member name="M:MetricConverter.API.Controllers.V1.MetricUnitController.MetricUnitByTypeId(System.Guid)">
             <summary>
             Get all metric unit by typeid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricUnitController.GetMetricUnit(System.Guid)">
+            <summary>
+            Get metric unit information
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricUnitController.AddMetricUnit(MetricConverter.Model.MetricUnit)">
+            <summary>
+            Add new metric unit information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricUnitController.DeleteMetricUnit(System.Guid)">
+            <summary>
+            Delete metric unit information
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricUnitController.UpdateMetricUnit(MetricConverter.Model.MetricUnit)">
+            <summary>
+            Update metric unit information
             </summary>
             <returns></returns>
         </member>

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MetricConverter.Core.Entities;
 using MetricConverter.Core.Helpers;
 using MetricConverter.Core.Repositories;
 using MetricConverter.Model;
@@ -23,14 +24,17 @@ namespace MetricConverter.Core.Services
             });
             _mapper = autoMapperConfig.CreateMapper();
         }
-        public Task<Guid> AddAsync(MetricType metricType)
+        public async Task<Guid> AddAsync(MetricType metricType)
         {
-            throw new NotImplementedException();
+            var metricTypeEntity = _mapper.Map<MetricTypeEntity>(metricType);
+            var result = await metricTypeRepository.AddAsync(metricTypeEntity);
+            return result;
         }
 
-        public Task<Guid> DeleteAsync(Guid id)
+        public async Task<Guid> DeleteAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var result = await metricTypeRepository.DeleteAsync(id);
+            return result;
         }
 
         public Task<IReadOnlyList<MetricType>> GetAllAsync(Guid id)
@@ -45,14 +49,18 @@ namespace MetricConverter.Core.Services
             return metricTypes;
         }
 
-        public Task<MetricType> GetByIdAsync(Guid id)
+        public async Task<MetricType> GetByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            var result = await metricTypeRepository.GetByIdAsync(id);
+            var metricTypeEntity = _mapper.Map<MetricType>(result);
+            return metricTypeEntity;
         }
 
-        public Task<Guid> UpdateAsync(MetricType metricType)
+        public async Task<Guid> UpdateAsync(MetricType metricType)
         {
-            throw new NotImplementedException();
+            var metricTypeEntity = _mapper.Map<MetricTypeEntity>(metricType);
+            var result = await metricTypeRepository.UpdateAsync(metricTypeEntity);
+            return result;
         }
     }
 }
