@@ -1,5 +1,6 @@
 # Ayo Metric Converter Technical Test
 
+**Hosted Link** : http://aries-hr.southafricanorth.cloudapp.azure.com/metric-converter/swagger/index.html
 
 ## Tech
 
