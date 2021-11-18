@@ -1,0 +1,505 @@
+{
+	"info": {
+		"_postman_id": "8e04322f-0c1a-4592-b6e0-f236b0d486c5",
+		"name": "Ayo Conveter local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MetricConverter",
+			"item": [
+				{
+					"name": "Fahrenheit - Celcuis",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeId\": \"FA4B5538-8BE3-4065-A4CA-D114ABA0C22D\",\r\n  \"unitFromId\": \"DD7FEA03-F1C0-49B2-82A7-E5AE33C8D9C0\",\r\n  \"unitToId\": \"6DB4CC52-DCD7-4C8F-8254-D2EB4D5AD108\",\r\n  \"value\": 71.7\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metricconverter",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricconverter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Celcuis - Fahrenheit",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeId\": \"FA4B5538-8BE3-4065-A4CA-D114ABA0C22D\",\r\n  \"unitFromId\": \"6DB4CC52-DCD7-4C8F-8254-D2EB4D5AD108\",\r\n  \"unitToId\": \"DD7FEA03-F1C0-49B2-82A7-E5AE33C8D9C0\",\r\n  \"value\": 22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metricconverter",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricconverter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Meter - Kilometer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeId\": \"E73B8ACD-ABC4-436B-9F23-9F381BBE2683\",\r\n  \"unitFromId\": \"8C9CA04B-9061-45BB-997C-F013A01D79D2\",\r\n  \"unitToId\": \"E5686472-EC24-4C74-BA1E-CB5A1157304E\",\r\n  \"value\": 22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metricconverter",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricconverter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Kilometer - Meter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeId\": \"E73B8ACD-ABC4-436B-9F23-9F381BBE2683\",\r\n  \"unitFromId\": \"E5686472-EC24-4C74-BA1E-CB5A1157304E\",\r\n  \"unitToId\": \"8C9CA04B-9061-45BB-997C-F013A01D79D2\",\r\n  \"value\": 22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metricconverter",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricconverter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Second - Minute",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeId\": \"BC22F44C-273C-4253-9A08-83B1C228DC0C\",\r\n  \"unitFromId\": \"14bec5c1-ada8-4d53-a202-847c0cb67437\",\r\n  \"unitToId\": \"5e61ca23-6b51-4c61-868c-dea1fda63ebe\",\r\n  \"value\": 60\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metricconverter",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricconverter"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Minute - Second",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"typeId\": \"BC22F44C-273C-4253-9A08-83B1C228DC0C\",\r\n  \"unitFromId\": \"5e61ca23-6b51-4c61-868c-dea1fda63ebe\",\r\n  \"unitToId\": \"14bec5c1-ada8-4d53-a202-847c0cb67437\",\r\n  \"value\": \"2.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metricconverter",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricconverter"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metric Converter Type",
+			"item": [
+				{
+					"name": "Get all Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metrictype",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metrictype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Type",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metrictype/bc22f44c-273c-4253-9a08-83b1c228dc0c",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metrictype",
+								"bc22f44c-273c-4253-9a08-83b1c228dc0c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": \"9ad2f2a6-42e0-455b-adf0-0d9077975913\",\r\n    \"name\": \"Weight\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metrictype",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metrictype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Type",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": \"bc22f44c-273c-4253-9a08-83b1c228dc0c\",\r\n    \"name\": \"Time\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metrictype",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metrictype"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Type",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metrictype/9ad2f2a6-42e0-455b-adf0-0d9077975913",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metrictype",
+								"9ad2f2a6-42e0-455b-adf0-0d9077975913"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metric Converter Unit",
+			"item": [
+				{
+					"name": "Get Unit by Type Id - Temperature",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metricunit/type/fa4b5538-8be3-4065-a4ca-d114aba0c22d",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricunit",
+								"type",
+								"fa4b5538-8be3-4065-a4ca-d114aba0c22d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Unit by Type Id - Time",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metricunit/type/bc22f44c-273c-4253-9a08-83b1c228dc0c",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricunit",
+								"type",
+								"bc22f44c-273c-4253-9a08-83b1c228dc0c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Unit by Type Id - Length",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metricunit/type/e73b8acd-abc4-436b-9f23-9f381bbe2683",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricunit",
+								"type",
+								"e73b8acd-abc4-436b-9f23-9f381bbe2683"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metric Converter Formula",
+			"item": [
+				{
+					"name": "Get Formula by TypeId - Temperature",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metricformula/type/fa4b5538-8be3-4065-a4ca-d114aba0c22d",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricformula",
+								"type",
+								"fa4b5538-8be3-4065-a4ca-d114aba0c22d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Formula by TypeId - Time",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metricformula/type/bc22f44c-273c-4253-9a08-83b1c228dc0c",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricformula",
+								"type",
+								"bc22f44c-273c-4253-9a08-83b1c228dc0c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Formula by TypeId - Length",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metricformula/type/e73b8acd-abc4-436b-9f23-9f381bbe2683",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricformula",
+								"type",
+								"e73b8acd-abc4-436b-9f23-9f381bbe2683"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Formula Minute - Second",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:49318/api/metricformula/b432fdfb-5e17-4ddb-9887-490bce147db8",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricformula",
+								"b432fdfb-5e17-4ddb-9887-490bce147db8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Formula  Minute - Second",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": \"b432fdfb-5e17-4ddb-9887-490bce147db8\",\r\n    \"name\": \"Minute - Second\",\r\n    \"typeId\": \"bc22f44c-273c-4253-9a08-83b1c228dc0c\",\r\n    \"unitFromId\": \"5e61ca23-6b51-4c61-868c-dea1fda63ebe\",\r\n    \"unitToId\": \"14bec5c1-ada8-4d53-a202-847c0cb67437\",\r\n    \"formula\": \"(value*60)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:49318/api/metricformula",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "49318",
+							"path": [
+								"api",
+								"metricformula"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
