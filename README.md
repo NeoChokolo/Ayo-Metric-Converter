@@ -1,6 +1,7 @@
 # Ayo Metric Converter Technical Test
 
 **Hosted Link** : http://aries-hr.southafricanorth.cloudapp.azure.com/metric-converter/swagger/index.html
+**NB** Should the project fail to compile for whatever reason a post man project has been loaded to test against the deployed version of the API.
 
 ## Tech
 
