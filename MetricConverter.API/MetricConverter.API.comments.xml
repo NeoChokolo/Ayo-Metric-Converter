@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MetricConverter.API</name>
+    </assembly>
+    <members>
+        <member name="T:MetricConverter.API.Controllers.V1.MetricConverterController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:MetricConverter.API.Controllers.V1.MetricConverterController.metricConverterService">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricConverterController.#ctor(MetricConverter.Core.Services.IMetricConverterService)">
+            <summary>
+            
+            </summary>
+            <param name="metricConverterService"></param>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricConverterController.ConvertMetric(MetricConverter.Model.ConversionRequest)">
+            <summary>
+            Metric Calculator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MetricConverter.API.Controllers.V1.MetricFormulaController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.#ctor(MetricConverter.Core.Services.IMetricFormulaService)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.UpdateMetricFormula(MetricConverter.Model.MetricFormula)">
+            <summary>
+            Update metric formula information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.AddMetricFormula(MetricConverter.Model.MetricFormula)">
+            <summary>
+            Add new metric formula information
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.DeleteMetricFormula(System.Guid)">
+            <summary>
+            Delete metric formula information
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.GetMetricFormula(System.Guid)">
+            <summary>
+            Get metric formula information
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricFormulaController.MetricFormulaByTypeId(System.Guid)">
+            <summary>
+            Get all metric formula by typeid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MetricConverter.API.Controllers.V1.MetricTypeController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricTypeController.#ctor(MetricConverter.Core.Services.IMetricTypeService)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricTypeController.MetricTypes">
+            <summary>
+            Get all metric types defined
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:MetricConverter.API.Controllers.V1.MetricUnitController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricUnitController.#ctor(MetricConverter.Core.Services.IMetricUnitService)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MetricConverter.API.Controllers.V1.MetricUnitController.MetricUnitByTypeId(System.Guid)">
+            <summary>
+            Get all metric unit by typeid
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MetricConverter.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:MetricConverter.API.Startup.MapServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            DI Repositories
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:MetricConverter.API.Startup.MapRepositories(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            DI Repositories
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

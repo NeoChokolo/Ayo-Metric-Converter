@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MetricConverter.Model</name>
+    </assembly>
+    <members>
+        <member name="T:MetricConverter.Model.ConversionRequest">
+            <summary>
+            Conversion calculator request.
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.ConversionRequest.TypeId">
+            <summary>
+            Conversion type e.g. Length, Temperature, Weight as per look up endpoint e.g. 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.ConversionRequest.UnitFromId">
+            <summary>
+            Unit identifier to convert from e.g. 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.ConversionRequest.UnitToId">
+            <summary>
+            Unit identifier to convert to e.g. fa4b5338-8be3-4845-a4ca-d334aba0c32d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.ConversionRequest.Value">
+            <summary>
+            Unit value to calculate from
+            </summary>
+        </member>
+        <member name="T:MetricConverter.Model.ConversionResponse">
+            <summary>
+            Response object returned after calculation
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.ConversionResponse.Type">
+            <summary>
+            Conversion type e.g. Length, Temperature, Weight
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.ConversionResponse.Result">
+            <summary>
+            Conversion results after calulation e.g. 2 Micrometer = 0.0000021872 Yard
+            </summary>
+        </member>
+        <member name="T:MetricConverter.Model.MetricFormula">
+            <summary>
+            Metric Formula
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricFormula.Id">
+            <summary>
+            Formular Id e.g. 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricFormula.Name">
+            <summary>
+            Formulae name
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricFormula.TypeId">
+            <summary>
+            Type identifier .e.g 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricFormula.UnitFromId">
+            <summary>
+            Unit identifier to convert from e.g. 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricFormula.UnitToId">
+            <summary>
+            Unit identifier to convert to e.g. fa4b5338-8be3-4845-a4ca-d334aba0c32d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricFormula.Formula">
+            <summary>
+            Execution formula
+            </summary>
+        </member>
+        <member name="T:MetricConverter.Model.MetricType">
+            <summary>
+            Metric Type
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricType.Id">
+            <summary>
+            Type Id e.g. 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricType.Name">
+            <summary>
+            Type name
+            </summary>
+        </member>
+        <member name="T:MetricConverter.Model.MetricUnit">
+            <summary>
+            Metric Unit
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricUnit.Id">
+            <summary>
+            Unit Id e.g. 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricUnit.Name">
+            <summary>
+            Unit name
+            </summary>
+        </member>
+        <member name="P:MetricConverter.Model.MetricUnit.TypeId">
+            <summary>
+            Unit type identifier .e.g 2c32be51-8c58-407b-be0a-fc89bf79cc1d
+            </summary>
+        </member>
+        <member name="T:MetricConverter.Model.ValidationResult">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MetricConverter.Model.ValidationResult`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+    </members>
+</doc>

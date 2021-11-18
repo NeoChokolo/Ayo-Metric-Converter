@@ -3,3 +3,12 @@
 ################################################################################
 
 /MetricConverter.Core/bin/Debug/netcoreapp3.1
+/MetricConverter.Core/obj
+/MetricConverter.API/obj
+/MetricConverter.API/bin/Debug/netcoreapp3.1
+/MetricConverter.Infrastructure/bin/Debug/netcoreapp3.1
+/MetricConverter.Infrastructure/obj
+/MetricConverter.Model/bin/Debug/netcoreapp3.1
+/MetricConverter.Model/obj
+/MetricConverter.Ulitilities/bin/Debug/netcoreapp3.1
+/MetricConverter.Ulitilities/obj
