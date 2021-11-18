@@ -3,15 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricConverter.API", "MetricConverter.API\MetricConverter.API.csproj", "{DB66EF32-8F5A-4746-A76F-9181F6F2B334}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetricConverter.API", "MetricConverter.API\MetricConverter.API.csproj", "{DB66EF32-8F5A-4746-A76F-9181F6F2B334}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricConverter.Core", "MetricConverter.Core\MetricConverter.Core.csproj", "{C4464C35-5F2B-48C4-B605-3C23588BADA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetricConverter.Core", "MetricConverter.Core\MetricConverter.Core.csproj", "{C4464C35-5F2B-48C4-B605-3C23588BADA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricConverter.Infrastructure", "MetricConverter.Infrastructure\MetricConverter.Infrastructure.csproj", "{2BAB0982-C489-4938-9372-E07DAD411DE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetricConverter.Infrastructure", "MetricConverter.Infrastructure\MetricConverter.Infrastructure.csproj", "{2BAB0982-C489-4938-9372-E07DAD411DE0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricConverter.Model", "MetricConverter.Model\MetricConverter.Model.csproj", "{6F33D3C7-B379-4CDC-B68F-D5E57F0FF271}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetricConverter.Model", "MetricConverter.Model\MetricConverter.Model.csproj", "{6F33D3C7-B379-4CDC-B68F-D5E57F0FF271}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetricConverter.Ulitilities", "MetricConverter.Ulitilities\MetricConverter.Ulitilities.csproj", "{EE6726CA-B912-4EFE-8D28-D4DFBC118548}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetricConverter.Ulitilities", "MetricConverter.Ulitilities\MetricConverter.Ulitilities.csproj", "{EE6726CA-B912-4EFE-8D28-D4DFBC118548}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Script", "SQL Script", "{4CD87B78-B269-488F-8D63-9477C9A18DD8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Documents\AyoConverter.sql = ..\..\..\Documents\AyoConverter.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman Project", "Postman Project", "{EB9FCA56-6C2A-4500-9A18-2160337E3BEA}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\Ayo Conveter local.postman_collection.json = ..\..\..\Downloads\Ayo Conveter local.postman_collection.json
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

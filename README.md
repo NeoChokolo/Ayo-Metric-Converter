@@ -1,2 +1,41 @@
-# Ayo-Metric-Converter
-Ayo Technical Test
+# Ayo Metric Converter Technical Test
+
+
+## Tech
+
+Project uses a number of technology stack:
+
+- .Net Core 3.1
+- SQL Server Database
+
+## Run the app
+
+Run the following command in the **Terminal**:
+- Clone the repo
+```dotnetcli
+git clone https://github.com/NeoChokolo/Ayo-Metric-Converter.git
+```
+- Restore nuget packages
+```dotnetcli
+dotnet restore
+```
+- **Run the SQL file "AyoConverter.sql" contained in the project solution to create the database, tables and initial data**
+
+```dotnetcli
+dotnet run 
+alternatively press F5 on visual studio/visual code
+```
+
+
+## Main Nugets Used
+
+| Name | Nuget Url |
+| ------ | ------ |
+| Swagger |  |
+| Jace |  |
+| AutoMapper |  |
+| Microsoft Entity Framework Core |  |
+
+## License
+
+MIT
